@@ -43,7 +43,7 @@ GitHub PR Comments Fetcher is a Node.js application that fetches comments from a
 To run the script, use the command below and replace `'owner/repo'` and `'pull_request_number'` with your actual values:
 
 ```bash
-node fetchComments.js '{owner}/{repo}/pulls/{pull_request_number}'
+node index.js '{owner}/{repo}/pulls/{pull_request_number}'
 ```
 
 ### Example
@@ -51,7 +51,7 @@ node fetchComments.js '{owner}/{repo}/pulls/{pull_request_number}'
 Run the script using the following command, replacing 'owner', 'repo' and 'pull_request_number' with your actual values:
 
 ```bash
-node fetchComments.js 'lightspeed-hospitality/lighthouse-insights/pulls/364'
+node index.js 'lightspeed-hospitality/lighthouse-insights/pulls/364'
 ```
 
 This will generate a JSON file in the 'comments' directory. You can then take the data from the 'comments' directory, and use a tool like OpenAI's ChatGPT to extract important learning points. 
